@@ -1,0 +1,33 @@
+In this project, I will go through various Capture the Flag (CTF) challenges. CTF is a popular format for testing Cybersecurity knowledge and recreational problem solving.
+
+For this CTF, most challenges will use Cyberchef and/or just Google.
+
+Trivia Challenges
+👥 Challenge 1:  Honesty is Best Policy
+Solution:  Integrity
+How to Solve: Google the CIA TRIAD ->” ensuring that information is not altered accidentally or by entities unauthorized to make alterations” is about integrity -> it tells you about integrity.
+
+👥 Challenge 3:  Hostage
+Solution:   Ransomware
+How to Solve: google “What is this kind of malicious software that will encrypt the files on your hard drive and only provide a decryption key when you pay hackers a hefty fee, usually in cryptocurrency.”?
+
+Reconnaissance Challenges
+👥 Challenge 4:  11,185,272
+Solution:  12,837,064
+How to Solve:  Google “11,185,272” -> found a “http://www.isthe.com/chongo/tech/math/prime/mersenne.html” -> ctrl f “11185272” -> “whats next?” use that to get next number underneeth.
+
+Cryptography Challenges
+👥 Challenge 7:  Shifty
+Solution:   PleaseChangeMe
+How to Solve: use Open cyberchef -> get ROT13 and put it into bake -> put in the “Qeb mxpptloa fp MibxpbZexkdbJb” -> go up to 29 times or down to 3 times. Both yield the same result. 
+
+
+👥 Challenge 8:  Encoded Message
+Solution:  itgetsharderfromhere
+How to Solve: go to cyberchief -> use ROT 13 in the bake -> put in the encoded message in the input -> press the magic wand -> it adds the base 64 to the bake section -> the output comes out as it gets harder from here. 
+
+
+👥 Challenge 10:  But are there eggs?
+Solution:  ABRA CA DABRA
+How to Solve: search up “what is the name of the cipher developed by a 17th century lawyer, statesman, and philosopher.” -> use the bacon cypher -> press the magic wand -> it will use encode, decode, decode using different translations. 
+
