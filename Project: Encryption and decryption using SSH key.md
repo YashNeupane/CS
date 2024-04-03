@@ -38,11 +38,37 @@ We're going to use openssl this time, because it comes with built-in cryptograph
 Next, I create a secret message file called secret.txt.
 
 Run -> echo "MY SECRET MESSAGE" > secret.txt
-   - echo "My secret code is I am cool" > secret.txt
+   - echo "My secret code is CREAMPIE" > secret.txt
+
+ Now let's use openssl to encrypt the file with publickey.pem.
+
+Run the following:
+openssl pkeyutl -encrypt -pubin -inkey ~/.ssh/publickey.pem -in secret.txt -out secret.txt.encrypted
+
+~~ Check out the results with cat secret.txt.encrypted -- it should print out a bunch of gibberish, because it's encrypted!
+
+
+![Screenshot 2024-04-02 193349](https://github.com/YashNeupane/CS/assets/128945418/ce9b8ec2-623c-4dc1-bdc0-af7985d20b4a)
 
 
 
 
+Now let's see if we can decrypt it using privatekey.pem.
+
+Run:
+openssl pkeyutl -decrypt -inkey  ~/.ssh/privatekey.pem -in secret.txt.encrypted  -out secret.txt.decrypted 
+
+run cat secret.txt.decrypted to find out, It shows me my secret message which was "My secret code is CREAMPIE"
+
+
+![Screenshot 2024-04-02 195407](https://github.com/YashNeupane/CS/assets/128945418/6d889136-f7c9-48d3-ade7-ec4375ed6f5a)
+
+
+
+
+This screenshot shows the contents of all 3 files: original, encrypted, decrypted
+
+![Screenshot 2024-04-02 195629](https://github.com/YashNeupane/CS/assets/128945418/a005903d-ff90-4187-9c38-94921d7d7277)
 
 
 
