@@ -29,4 +29,4 @@ Command #3: a john command using a custom mask
 john --mask=?d?a?z
 
 
-
+![Screenshot 2024-04-02 202726](https://github.com/YashNeupane/CS/assets/128945418/022ae704-6090-4bbf-afdc-29caf863c348)
