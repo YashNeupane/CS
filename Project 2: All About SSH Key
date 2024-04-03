@@ -11,4 +11,3 @@ ssh-keygen = the utility used to generate the key pair
 -C "CYB101 Ubuntu Key" = provides custom key comment (which will be appended at the end of the public key).
 Usually an email address is used as a comment, but this time we're labeling it with the machine we'll use it on.
 Think of it like a label for your key, so you don't mix it up with other keys!
-
