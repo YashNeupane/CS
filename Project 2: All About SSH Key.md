@@ -21,3 +21,46 @@ Encryption with SSH Keys
     - The public key is used to encrypt a message
     - The private key is used to decrypt it
 
+Encryption with SSH Keys
+We can use SSH keys for asymmetric encryption, where:
+
+The public key is used to encrypt a message
+The private key is used to decrypt it
+
+
+We're going to use openssl this time, because it comes with built-in cryptography functions
+
+ | openssl genrsa -out ~/.ssh/privatekey.pem 2048
+ | openssl rsa -in  ~/.ssh/privatekey.pem -out ~/.ssh/publickey.pem -pubout -outform PEM
+
+^^^^^^ These commands generate an RSA key pair, consisting of a private key (privatekey.pem) and a corresponding public key (publickey.pem), and save them to files in the ~/.ssh directory.
+
+Next, I create a secret message file called secret.txt.
+
+Run -> echo "MY SECRET MESSAGE" > secret.txt
+   - echo "My secret code is I am cool" > secret.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
